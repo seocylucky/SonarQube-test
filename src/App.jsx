@@ -2,9 +2,6 @@ import TodoBody from "./components/todos/TodoBody";
 import TodoHeader from "./components/todos/TodoHeader";
 import { DefaultLayout } from "./layouts/DefaultLayout";
 import { TodoProvider } from "../contexts/TodoContext";
-import { Button } from "woori-design";
-import { FloatButton } from "woori-design";
-import { theme } from "woori-design";
 
 function App() {
   return (
@@ -13,14 +10,6 @@ function App() {
       {/* DefaultLayout 자식 요소(children)로 Counter 컴포넌트를 전달 */}
       <header>
         <h1>Todos</h1>
-        <Button size="xlarge">gkdldldld</Button>
-        <FloatButton
-          icon="❓"
-          color={theme.semantic.color.alert.alert}
-          position="center"
-          size="large"
-          onClick={() => alert("Help clicked!")}
-        />
         <h1 className="pt-8 mx-auto text-red-200 max-w-max text-7xl">
           <img
             className="ml-4"
